@@ -1,0 +1,511 @@
+log{
+    background-color:rgb(125, 184, 235);
+    max-width: 100%;
+    } 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.wrapper{
+    background: #ececec;
+    padding: 0 20px 0 20px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.row{
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0,0,0,0.2);
+}
+.side-image{
+    background-image: url("/10-Earth-Month.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+}
+.imgh{
+    width: 240px;
+    position: absolute;
+    top: 30px;
+left:524px;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text p{
+    color: #fff;
+    font-size: 18px;
+}
+i{
+    font-weight: 400;
+    font-size: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.input-box{
+    width: 330px;
+    box-sizing: border-box;
+}
+.input-box header{
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+.input-field{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+.input{
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+.input-box .input-field label{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: .5s;
+}
+.input-field .input:focus ~ label{
+    top: -10px;
+    font-size: 13px;
+}
+.input-field .input:valid ~ label{
+    top: -10px;
+    font-size: 13px;
+    color: #5d5076;
+}
+.input-field .input:focus, .input-field .input:valid{
+    border-bottom: 1px solid #743ae1;
+}
+.submit{
+    border: none;
+    outline: none;
+    height: 45px;
+    background: #ececec;
+    border-radius: 5px;
+    transition: .4s;
+    top: 24px;
+    position: relative;
+}
+.submit:hover{
+    background: rgba(37, 95, 156,0.9);
+    color: #fff;
+}
+.signin{
+    text-align: center;
+    font-size: small;
+    margin-top: 40px;
+}
+span a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+span a:hover{
+    text-decoration: underline;
+    color: #000;
+}
+
+
+.about{
+    text-align: center;
+    font-style: initial;
+    font-weight: bolder;
+    margin-top: 15px;
+    font-size: 20px;
+
+
+}
+.ap{
+    text-align: center;
+}
+@media only screen and (max-width: 768px){
+    .side-image{
+        border-radius: 10px 10px 0 0;
+    }
+    .imgh{
+        width: 200px;
+        position: absolute;
+        top:142px;
+        left: 24%;
+    }
+    .text{
+        position: absolute;
+        top: 70%;
+        text-align: center;
+    }
+    .text p,i{
+        font-size: 17px;
+    }
+    .row{
+        max-width: 420px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/* navbar css */
+.topw{
+    background-color: rgb(11, 42, 151);
+    height: 3rem;
+    justify-content: center;
+    display: flex;
+    color: #ececec;
+}
+.topp{
+    font-size: 25px;
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+
+
+.header-fixed {
+background-color:#292c2f;
+box-shadow:0 1px 1px #ccc;
+padding: 20px 40px;
+height: 80px;
+color: #ffffff;
+box-sizing: border-box;
+top:-100px;
+
+-webkit-transition:top 0.3s;
+transition:top 0.3s;
+}
+.navlogo{
+    width: 3rem;
+    
+}
+
+.header-fixed .header-limiter {
+max-width: 1200px;
+text-align: center;
+margin: 0 auto;
+}
+
+
+
+.header-fixed-placeholder{
+height: 80px;
+display: none;
+}
+
+
+
+.header-fixed .header-limiter h1 {
+float: left;
+font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+line-height: 40px;
+margin: 0;
+}
+
+.header-fixed .header-limiter h1 span {
+color: #5383d3;
+}
+
+
+
+.header-fixed .header-limiter a {
+color: #ffffff;
+text-decoration: none;
+}
+
+.header-fixed .header-limiter nav {
+font:16px Arial, Helvetica, sans-serif;
+line-height: 40px;
+float: right;
+}
+
+.header-fixed .header-limiter nav a{
+display: inline-block;
+padding: 0 5px;
+text-decoration:none;
+color: #ffffff;
+opacity: 0.9;
+}
+
+.header-fixed .header-limiter nav a:hover{
+opacity: 1;
+}
+
+.header-fixed .header-limiter nav a.selected {
+color: #608bd2;
+pointer-events: none;
+opacity: 1;
+}
+
+
+body.fixed .header-fixed {
+padding: 10px 40px;
+height: 50px;
+position: fixed;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 1;
+}
+
+body.fixed .header-fixed-placeholder {
+display: block;
+}
+
+body.fixed .header-fixed .header-limiter h1 {
+font-size: 24px;
+line-height: 30px;
+}
+
+body.fixed .header-fixed .header-limiter nav {
+line-height: 28px;
+font-size: 13px;
+}
+
+
+/* Making the header responsive */
+
+@media all and (max-width: 600px) {
+
+.header-fixed {
+    padding: 20px 0;
+    height: 75px;
+}
+.topw{
+    height: 2rem;
+    
+    
+}
+.navlogo{
+    width: 2rem;
+}
+
+.topp{
+    font-size: 15px;
+    margin-top: 8px;
+}
+.header-fixed .header-limiter h1 {
+    float: none;
+    margin: -8px 0 10px;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.header-fixed .header-limiter nav {
+    line-height: 1;
+    float:none;
+}
+
+.header-fixed .header-limiter nav a {
+    font-size: 13px;
+}
+
+body.fixed .header-fixed {
+    display: none;
+}
+
+}
+
+
+
+body {
+margin: 0;
+padding: 0;
+/* height: 1500px; */
+}
+
+/* fotter section */
+.footer {
+    background-color: #414141;
+    width: 100%;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+    width: 33%;
+    padding-right: 15px;
+}
+
+.footer .about {
+    line-height: 20px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer .about span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .icons {
+    margin-top: 25px;
+}
+
+.footer .icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+    width: 30%;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: #0099ff;
+    text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+    width: 35%;
+}
+
+.footer h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer h2 span {
+    color: #0099ff;
+}
+
+.footer .menu {
+    color: #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer .menu a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer .menu a:hover {
+    color: #0099ff;
+}
+
+.footer .name {
+    color: #0099ff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .footer {
+    font-size: 14px;
+    }
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+    .footer .footer-center i {
+    margin-left: 0;
+    }
+}
